@@ -1,8 +1,7 @@
 import telebot
 from bot_token import TOKEN
 
-BOT_TOKEN = TOKEN
-bot = telebot.TeleBot(BOT_TOKEN)
+bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(func=lambda message: True, content_types=['text'])
 def echo(message):
